@@ -13,4 +13,4 @@ users:
     groups: users, admin
     lock_passwd: false
     ssh_authorized_keys:
-      - ${ssh_key}
+      - "${ssh_key}"

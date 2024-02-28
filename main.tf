@@ -20,9 +20,13 @@ provider "digitalocean" {
 }
 
 resource "digitalocean_droplet" "web" {
-  image  = "ubuntu-20-04-x64"
-  name   = "web-1"
+  image  = "ubuntu-23-10-x64"
+  name   = "terraform-droplet121"
   region = "fra1"
   size   = "s-1vcpu-1gb"
-  user_data = file("terramino.yaml")
+  # user_data = file("terramino.yaml")
+}
+
+resource "digitalocean_droplet" "web1" {
+  
 }
